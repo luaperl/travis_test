@@ -9,8 +9,7 @@ install:
   - pip3 install coveralls==1.1
   
 script:
-  - coverage run --source=ngh_func test/test_hello.py
-  - coverage run --source=ngh_func test/test_math.py
+  - coverage run --source=ngh_func test/*
 
 after_success:
   - coveralls
