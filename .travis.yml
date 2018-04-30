@@ -12,6 +12,5 @@ notifications:
   email:
     recipients:
       - ngh3053@gmail.com
-      - dollking@kookmin.ac.kr
     on_success: always
     on_failure: always
