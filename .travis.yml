@@ -10,7 +10,8 @@ install:
   - python3 setup.py install
   
 script:
-  - coverage run --source=ngh_func test
+  - coverage run --source=ngh_func test/test_hello.py
+  - coverage run --source=ngh_func test/test_math.py
 
 after_success:
   - coveralls
