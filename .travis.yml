@@ -7,7 +7,6 @@ install:
   - sudo apt-get install python3-pip
   - pip3 install pytest-cov==2.4.0
   - pip3 install coveralls==1.1
-  - python3 setup.py install
   
 script:
   - coverage run --source=ngh_func test/test_hello.py
