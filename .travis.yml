@@ -4,6 +4,7 @@ python:
   - "3.5"
   
 install:
+  - sudo apt-get install python-pip3
   - sudo pip3 install coveralls
   - python3 setup.py install
   
