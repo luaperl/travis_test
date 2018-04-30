@@ -2,8 +2,16 @@ language: python
 python:
   - "3.5"
   
-#install:
-#  - pip3 install -r requirements.txt
+install:
+  - python3 setup.py install
   
 script:
-  - python3 hello.py
+  - pytest
+
+notifications:
+  email:
+    recipients:
+      - ngh3053@gmail.com
+      - dollking@kookmin.ac.kr
+    on_success: always
+    on_failure: always
