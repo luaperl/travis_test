@@ -1,12 +1,17 @@
+sudo: require
 language: python
 python:
   - "3.5"
   
 install:
+  - sudo pip3 install coveralls
   - python3 setup.py install
   
 script:
   - pytest
+
+after_success:
+  - coveralls
 
 notifications:
   email:
