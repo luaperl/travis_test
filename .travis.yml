@@ -5,11 +5,12 @@ python:
   
 install:
   - sudo apt-get install python3-pip
-  - sudo pip3 install coveralls
+  - pip3 install pytest-cov==2.4.0
+  - pip3 install coveralls==1.1
   - python3 setup.py install
   
 script:
-  - pytest
+  - coverage run --source=ngh_func test
 
 after_success:
   - coveralls
