@@ -1,6 +1,3 @@
-import sys
-
-sys.path.insert(0, './')
 import ngh_func.hello as h
 
 def test_hello_en():

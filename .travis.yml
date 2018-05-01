@@ -9,6 +9,7 @@ install:
   - pip3 install coveralls==1.1
   
 script:
+  - python3 setup.py install
   - py.test --cov ngh_func
 
 after_success:

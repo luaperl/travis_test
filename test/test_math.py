@@ -1,6 +1,3 @@
-import sys
-
-sys.path.insert(0, './')
 import pytest
 import ngh_func.math as m
 
